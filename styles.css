@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .color-box {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  
+  .color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .color-options button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-options button:hover {
+    transform: scale(1.1);
+  }
+  
+  button[data-testid="newGameButton"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[data-testid="newGameButton"]:hover {
+    background-color: #0056b3;
+  }
+  
+  p[data-testid="gameStatus"] {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .color-box {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .color-options button {
+      width: 40px;
+      height: 40px;
+    }
+  }
